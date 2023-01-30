@@ -46,9 +46,9 @@ function App() {
         <Routes>
           <Route path='/' element={<Principal/>}></Route>
           <Route path="/cadastro" element={<Home/>} ></Route>
-          <Route path="/login" element={<Login/>} ></Route>
-          <Route path='/register' element={<Register/>}/>
-          <Route path="/dashboard" element={<Dashboard/>} ></Route>
+          <Route path="/login" element={!user ? <Login/> : <Navigate to="/dashboard"/>}/>
+          <Route path='/register' element={!user ? <Register/> : <Navigate to="/dashboard"/>}/>
+          <Route path="/dashboard" element={user ? <Dashboard/> : <Navigate to="/login"/>}/>
           <Route path="/forget" element={<Forget/>}></Route>
         </Routes>
         <Footer/>

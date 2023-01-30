@@ -2,9 +2,9 @@ import React from 'react'
 import { useState } from 'react'
 import { useAuthentication } from "../../hooks/useAuthentication"
 import './Forget.css'
-import 'firebase/auth';
+import 'firebase/compat/auth';
 import firebase from '../../firebase/config'
-import  sendPasswordResetEmail  from 'firebase/auth'
+import { sendPasswordResetEmail } from 'firebase/auth'
 const Forget = () => {
 
     const[email, setEmail] = useState("")

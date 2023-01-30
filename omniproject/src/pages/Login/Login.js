@@ -48,8 +48,13 @@ const Login = () => {
             </label>
 
             
-            {!loading &&<button className="btn"><NavLink to="/dashboard">Entrar</NavLink></button>}
+            {!loading &&<button className="btn">Entrar</button>}
+            <div className="links">
             <NavLink to="/forget" >Esqueceu a senha?</NavLink>
+            </div>
+            <NavLink to="/register" >Cadastre-se</NavLink>
+            
+
             {loading && <button className="btn" disable>Aguarde...</button>}
             {error && <p className="error">{error}</p>}
             

@@ -5,4 +5,12 @@
 
 .forget{
     text-align: center;
+    
+}
+
+.links{
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+    margin: 10px;
 }
