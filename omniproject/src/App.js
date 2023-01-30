@@ -19,6 +19,7 @@ import { Principal } from './pages/Princ/Principal';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Forget from './pages/Forget/Forget';
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
           <Route path="/login" element={<Login/>} ></Route>
           <Route path='/register' element={<Register/>}/>
           <Route path="/dashboard" element={<Dashboard/>} ></Route>
+          <Route path="/forget" element={<Forget/>}></Route>
         </Routes>
         <Footer/>
       </BrowserRouter>

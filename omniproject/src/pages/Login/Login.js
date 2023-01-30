@@ -49,6 +49,7 @@ const Login = () => {
 
             
             {!loading &&<button className="btn"><NavLink to="/dashboard">Entrar</NavLink></button>}
+            <NavLink to="/forget" >Esqueceu a senha?</NavLink>
             {loading && <button className="btn" disable>Aguarde...</button>}
             {error && <p className="error">{error}</p>}
             
