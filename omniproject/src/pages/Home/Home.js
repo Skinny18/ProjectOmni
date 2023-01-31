@@ -26,6 +26,7 @@ const Home = () => {
     const [datainicio, setDatainicio] = useState("")
     const [saldodehoras, setSaldodehoras] = useState("")
     const [horasprevistas, setHorasprevistas] = useState("")
+    const [dataentrega, setDataentrega] = useState("")
 
     const [task, setTask] = useState([])
     //Tarefa
@@ -62,10 +63,7 @@ const Home = () => {
         horasprevtarefas,
       ]) 
 
-      Axios.post("http://localhost:3001/register",
-      {
-        
-      })
+      
     
 
       console.log(task)
@@ -103,6 +101,12 @@ const Home = () => {
               <span>Data de Inicio:</span>
               <input value={datainicio} onChange={(e) => setDatainicio(e.target.value)} type="date" name="data" required placeholder='Data de Inicio'  />
             </label>
+
+            <label>
+              <span>Data de Entrega:</span>
+              <input value={dataentrega} onChange={(e) => setDataentrega(e.target.value)} type="date" name="data" required placeholder='Data de Inicio'  />
+            </label>
+
 
             <button onClick={openModal}>Adicionar Tarefas</button>
       <Modal

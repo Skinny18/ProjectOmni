@@ -42,7 +42,7 @@ const Register = () => {
     },[authError])
   return (
     <div className="register">
-        <h1>Cadastre-ser</h1>
+        <h1>Cadastre-se</h1>
         <form onSubmit={handleSubmit}>
             <label>
                 <span>Nome:</span>
