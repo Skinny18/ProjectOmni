@@ -94,7 +94,7 @@ const Home = () => {
 
             <label>
                 <span>Responsável:</span>
-                <input value={password} onChange={(e) => setPassword(e.target.value)} type="name" name="name" required placeholder="Senha do usuário"/>
+                <input value={password} onChange={(e) => setPassword(e.target.value)} type="name" name="name" required placeholder="Responsavel pelo Projeto"/>
             </label>
 
             <label>
